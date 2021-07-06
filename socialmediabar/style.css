@@ -64,7 +64,8 @@ body {
     width: 60px;
     height: 60px;
     background: #e94057;
-    transition: all 0.4s;   
+    transition: all 0.4s; 
+    transform: scale(0);  
 }
 .box a:hover::after {
     transform: scale(0.8);
