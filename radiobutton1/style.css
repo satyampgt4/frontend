@@ -1,0 +1,62 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+body {
+    background: linear-gradient(to right, #f2a221, #e940a8, #8a2387);
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    height: 100vh;
+  }
+.container {
+  width: 200px;
+  height: 230px;
+  background: #26242e;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.box input {
+  display: none;
+}
+.box label {
+  position: relative;
+  display: block;
+  width: 170px;
+  height: 45px;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+  transition: 0.3 ease;
+  color: #fff;
+}
+.box .mark {
+  position: relative;
+  display: block;
+  height: 20px;
+  width: 20px;
+  border: 5px solid #fff;
+  margin: 1rem;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  background: #fff;
+}
+.box .mark::before {
+  content: "";
+  position: absolute;
+}
+.box input:checked ~ label,
+.box input:checked ~ label .mark {
+  border-color: #7041fe;
+  color: #7041fe;
+}
