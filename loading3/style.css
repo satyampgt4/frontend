@@ -1,0 +1,118 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    /* background: linear-gradient(to right, #f2a221, #e940a8, #8a2387); */
+  }
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .main {
+    height: 100vh;
+  }
+  .box{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 250px;
+      height: 250px;
+      display: flex;
+      align-items: center;
+     justify-content: space-around;
+  }
+  
+  span
+  {
+      display: block;
+      width: 20px;
+      height: 10px;
+      border-radius: 50%;
+  }
+  span::before
+  {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 40px;
+    width: 20px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(231, 61, 61, 0.5);
+    animation: effectfive 10s linear infinite alternate;
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .one
+  {
+      background: violet;
+      animation: effectone 1s linear infinite alternate;
+  }
+  .two
+  {
+      background: indigo;
+      animation: effecttwo 1s linear infinite alternate;
+     
+  }
+  .three
+  {
+    background: blue;
+    animation: effectthree 1s linear infinite alternate;
+   
+  }
+  .four
+  {
+      background: green;
+      animation: effectfour 1s linear infinite alternate;
+      
+  }
+  .five
+  {
+      background: yellow;
+      animation: effectfive 1s linear infinite alternate;
+      
+  }
+  
+@keyframes effectone{
+    0%{
+        transform: translateY(0px);
+    }
+    20%{
+        transform: translateY(-60px);
+    }
+}
+@keyframes effecttwo{
+    0%{
+        transform: translateY(0px);
+    }
+    40%{
+        transform: translateY(-60px);
+    }
+}
+@keyframes effectthree{
+    0%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(-60px);
+    }
+}
+@keyframes effectfour{
+    0%{
+        transform: translateY(0px);
+    }
+    80%{
+        transform: translateY(-60px);
+    }
+}
+@keyframes effectfive{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-60px);
+    }
+}
